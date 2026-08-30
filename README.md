@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 💱 داشبورد نرخ لحظه‌ای ارز و طلا | Navasan Price Dashboard
 
 داشبورد مدرن، سریع و تعاملی برای نمایش نرخ لحظه‌ای ارزهای آزاد، طلا، سکه، حباب بازار و تحلیل روند قیمت‌ها با نمودارهای پیشرفته **Area Chart به سبک Flowbite**.
@@ -93,4 +93,4 @@ npm run build
 این پروژه به صورت متن‌باز تحت لایسنس [MIT](LICENSE) منتشر شده است.
 =======
 #https://ashah404.github.io/navasan-price-dashboard/
->>>>>>> 2012bbfbaf337f9482615cf82e3a3592ef21a8ed
+2012bbfbaf337f9482615cf82e3a3592ef21a8ed
