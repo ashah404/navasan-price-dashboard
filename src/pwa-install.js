@@ -74,10 +74,10 @@ function createModalElement() {
 
       <!-- هدر مودال -->
       <div class="flex items-center gap-3 mb-5 pr-1">
-        <img src="./apple-touch-icon.png" alt="نوسان" class="w-12 h-12 rounded-xl shadow-md border border-emerald-500/30 flex-shrink-0" />
+        <img src="./apple-touch-icon.png" alt="قیمت چند" class="w-12 h-12 rounded-xl shadow-md border border-emerald-500/30 flex-shrink-0" />
         <div>
           <h3 class="font-bold text-base text-neutral-100 flex items-center gap-1.5">
-            <span>نصب وب‌اپ نوسان روی آیفون</span>
+            <span>نصب وب‌اپ «قیمت چند» روی آیفون</span>
             <span class="text-xs px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/60">iOS PWA</span>
           </h3>
           <p class="text-xs text-neutral-400 mt-0.5">اجرا بدون نیاز به اپ‌استور، تمام‌صفحه و با سرعت بالا</p>
@@ -251,7 +251,7 @@ function showIOSBottomBanner() {
 
     banner.innerHTML = `
       <div class="flex items-center gap-3">
-        <img src="./apple-touch-icon.png" alt="نوسان" class="w-10 h-10 rounded-xl shadow border border-neutral-700 flex-shrink-0" />
+        <img src="./apple-touch-icon.png" alt="قیمت چند" class="w-10 h-10 rounded-xl shadow border border-neutral-700 flex-shrink-0" />
         <div class="flex-1 min-w-0">
           <h4 class="text-xs font-bold text-neutral-100 flex items-center gap-1.5">
             <span>نصب روی صفحه اصلی آیفون</span>

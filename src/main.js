@@ -36,10 +36,10 @@ app.innerHTML = `
       </div>
       <div>
         <div class="flex items-center gap-2">
-          <h1 class="text-lg font-bold text-neutral-100">نرخ لحظه‌ای ارز و طلا</h1>
+          <h1 class="text-lg font-bold text-neutral-100">قیمت چند</h1>
           <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-medium bg-emerald-950/80 text-emerald-400 border border-emerald-800/60">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            بازار آزاد
+            نرخ لحظه‌ای بازار
           </span>
         </div>
         <p id="updated" class="text-xs text-neutral-400 mt-0.5">در حال دریافت جدیدترین نرخ‌ها…</p>
