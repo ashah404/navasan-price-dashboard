@@ -12,6 +12,10 @@ html {
 body {
   @apply bg-neutral-950 text-neutral-100 antialiased;
   font-family: var(--font-sans);
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
 }
 
 /* اعداد در جدول و کارت: ارقام فارسی با direction درست */
@@ -108,4 +112,33 @@ body {
 
 .flowbite-dropdown.show {
   display: block;
+}
+
+/* انیمیشن باز شدن نرم مودال و بنر راهنما */
+@keyframes pwaSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-pwa-pop {
+  animation: pwaSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes bounceSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 2s ease-in-out infinite;
 }

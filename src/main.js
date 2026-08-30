@@ -10,6 +10,7 @@ import {
   createFlowbiteAreaChart, createCombinedAreaChart,
   SYMBOL_CONFIGS,
 } from './chart.js';
+import { initPWAInstall } from './pwa-install.js';
 
 const app = document.getElementById('app');
 
@@ -46,6 +47,14 @@ app.innerHTML = `
     </div>
 
     <div class="flex items-center gap-2">
+      <!-- دکمه نصب وب‌اپ (iOS / PWA) -->
+      <button id="pwa-install-btn" title="نصب برنامه روی صفحه اصلی گوشی" class="inline-flex items-center gap-1.5 rounded-lg border border-emerald-600/50 bg-emerald-950/60 hover:bg-emerald-900/80 active:scale-95 px-3 py-1.5 text-xs font-medium text-emerald-300 transition shadow-sm cursor-pointer">
+        <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+        </svg>
+        <span>📱 نصب وب‌اپ</span>
+      </button>
+
       <!-- دکمه رفرش دستی -->
       <button id="refresh-btn" class="inline-flex items-center gap-1.5 rounded-lg border border-neutral-700 bg-neutral-900 hover:bg-neutral-800 active:scale-95 px-3 py-1.5 text-xs font-medium text-neutral-200 transition">
         <svg id="refresh-icon" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -835,9 +844,11 @@ if (initialCache && initialCache.fiat && initialCache.gold) {
 
 loadSpot();
 renderAllCardsGrid();
+initPWAInstall();
 
 // به‌روزرسانی خودکار هر ۶۰ ثانیه
 setInterval(() => {
   loadSpot(false);
 }, 60 * 1000);
+
 
